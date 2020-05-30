@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Scan'Order Client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap"rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://zupimages.net/up/20/19/ewyi.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+</head>
+<header>
+
+	   
+	<div class="topnav" id="myTopnav"> 
+
+	  <a href="#home" class="active" onclick="myFunction()">Scan N' Order</a>
+	  <a href="#Menus"onclick="myFunction()">Menus</a>
+	  <a href="#Plats"onclick="myFunction()">Plats</a>
+	  <a href="#Entrées"onclick="myFunction()">Entrées</a>
+	  <a href="#Desserts"onclick="myFunction()">Desserts</a>
+	  <a href="#Boissons"onclick="myFunction()">Boissons</a>
+	  <a href="#total"onclick="myFunction()">Total</a>
+	  <a href="#about"onclick="myFunction()">A propos</a>
+	<input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category"
+	>
+
+<ul id="myMenu">
+  <li><a href="#pizza" onclick="myFunction2()">Pizza</a></li>
+  <li><a href="#Sandwich"onclick="myFunction2()">Sandwich</a></li>
+  <li><a href="#pates"onclick="myFunction2()">Pates</a></li>
+  <li><a href="#beuf"onclick="myFunction2()">Cote de beuf</a></li>
+    <li><a href="#Salade"onclick="myFunction2()">Salade</a></li>
+  <li><a href="#Menu"onclick="myFunction2()">Menu</a></li>
+  <li><a href="#Cafe"onclick="myFunction2()">Café</a></li>
+  <li><a href="#Vin"onclick="myFunction2()">Vin</a></li>
+  <li><a href="#Ti"onclick="myFunction2()">Tiramisu</a></li>
+  <li><a href="#Glaces"onclick="myFunction2()">Glaces</a></li>
+</ul>
+
+
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  <i class="fa fa-bars"></i>
+	  </a>
+
+</div>
+</div>
+</header>
+<body onLoad="hide()" >
+
+<div class="home" id="home" onclick="myFunction2()">
+	
+	<h1><u>Bienvenue chez<br><span id="nom entreprise">RestoTest</span>!   </u></h1>
+    <h2>Pour commencer veuillez faire votre choix parmis la liste de produits:</h2>
+    <img  src="https://zupimages.net/up/20/19/8xyr.png" class="gb">
+</div>
+<hr>
+<div class="catalog" onclick="myFunction2()">
+	<h1><u>Catalogue</u></h1>
+	<br>
+	<hr>
+	<h1><u>Mis en Avants:<br></u></h1>
+	<div class="category" id="Trends"onclick="myFunction2()">
+		
+
+			<div class="prod" id="pizza">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=714&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Pizza</h2></span>
+					<p>Description:<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.s</p>
+					<p>Prix:7<span> </span>€</p>
+					<select id="Option01">
+				        <option value="Reg">Regina</option>
+				        <option value="4f">4fromages</option>
+				        <option value="Veg">Veggie</option>
+
+ 					</select>
+ 						<select id="Option02">
+				        <option value="Fro">Fromage</option>
+				        <option value="SFro">Sans Fromage</option>
+ 					</select>
+					<hr>
+					<select id="Prod0">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(0)" id="BP">Valider</button> <br>
+				</div>
+			</div>
+			<div class="prod"id="pates">
+				<div class="imgprod">
+					<span>
+					<img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1970&q=80">
+					</span>
+				</div>
+				<div class="infoprod">
+					<span><h2>Pâtes</h2></span>
+					<p><span>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					<p>Prix:6<span> </span>€</p>
+					<select id="Option11">
+				        <option value="SS">Sans sauce</option>
+				        <option value="Carbo">carbonara</option>
+				        <option value="bolo">bolognaise</option>
+				        <option value="bech">bechamelle</option>
+ 					</select>
+ 					<hr>
+					<select id="Prod1">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(1)" id="BP">Valider</button> <br>
+				</div>
+			</div>
+			<div class="prod" id="Sandwich">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1485451456034-3f9391c6f769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Sandwich</h2></span>
+					<p>Description:<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					<p>Prix:4<span> </span>€</p>
+					<select id="Option21">
+						<option value="jb">jambon beurre</option>
+				        <option value="sau">saumon fumé</option>
+				        <option value="poul">poulet</option>
+				        <option value="thon">thon</option>
+ 					</select>
+					<hr>
+					<select id="Prod2">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(2)" id="BP">Valider</button> <br>
+				</div>
+			</div>	
+			<div class="prod" id="beuf">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1579366948929-444eb79881eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Côte de beuf</h2></span>
+					<span><p>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span>
+					<p>Prix:9<span> </span>€</p>
+
+					<hr>
+					<select id="Prod3">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(3)" id="BP">Valider</button> <br>
+				</div>
+			</div>			
+
+	</div>		
+
+
+	</div>
+	<hr>
+	<h1><u>Menus:<br></u></h1>
+	<div class="category"  id="Menus"onclick="myFunction2()">
+	<div class="prod">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1572715376701-98568319fd0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Menu Plat du jour</h2></span>
+					<p>Description:<span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					<p>Prix:10<span> </span>€</p>
+					<hr>
+					<select id="Prod4">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(4)" id="BP" ">Valider</button> <br>
+				</div>
+			</div>	
+	<div class="prod">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1487795924438-a3cb4b7a5556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Menu Enfant</h2></span>
+					<p>Description:<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					<p>Prix:5<span> </span>€</p>
+					<hr>
+					<select id="Prod5">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(5)" id="BP">Valider</button> <br>
+				</div>
+	</div>	
+	<div class="prod">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1514573308375-84a13ac77f42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Menu Midi</h2></span>
+					<span><p>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span>
+					<p>Prix:8<span> </span>€</p>
+					<hr>
+					<select id="Prod6">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(6)" id="BP">Valider</button> <br>
+				</div>
+			</div>	
+	<div class="prod">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1533959938354-70634c231c21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Menu Soir</h2></span>
+					<span><p>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span>
+					<p>Prix:10<span> </span>€</p>
+					<hr>
+					<select id="Prod7">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(7)" id="BP">Valider</button> <br>
+				</div>
+			</div>				
+								
+	</div>
+	<hr>
+	<h1><u>Entrées:<br></u></h1>
+	<div class="category"  id="Entrées"onclick="myFunction2()">
+<div class="prod" id="Salade">
+				<div class="imgprod" >
+					<span>
+					<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+					</span>
+				</div>
+				<div class="infoprod">
+					<span><h2>Salade</h2></span>
+					<p><span>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					<p>Prix:4<span> </span>€</p>
+					<hr>
+					<select id="Prod12">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(12)" id="BP">Valider</button> <br>
+				</div>
+			</div>
+	</div>
+	<hr>
+	<h1><u>Plats:<br></u></h1>
+	<div class="category" id="Plats"onclick="myFunction2()">
+					<div class="prod" id="pizza">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=714&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Pizza</h2></span>
+					<p>Description:<span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.s</p>
+					<p>Prix:7<span> </span>€</p>
+					<hr>
+					<select id="Prod0">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(0)" id="BP">Valider</button> <br>
+				</div>
+			</div>
+			<div class="prod">
+				<div class="imgprod">
+					<span>
+					<img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1970&q=80">
+					</span>
+				</div>
+				<div class="infoprod">
+					<span><h2>Pâtes</h2></span>
+					<p><span>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					<p>Prix:6<span> </span>€</p>
+					<hr>
+					<select id="Prod1">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(1)" id="BP">Valider</button> <br>
+				</div>
+			</div>
+			<div class="prod">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1485451456034-3f9391c6f769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Sandwich</h2></span>
+					<p>Description:<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					<p>Prix:4<span> </span>€</p>
+					<hr>
+					<select id="Prod2">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(2)" id="BP">Valider</button> <br>
+				</div>
+			</div>	
+			<div class="prod">
+		<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1579366948929-444eb79881eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Côte de beuf</h2></span>
+					<span><p>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span>
+					<p>Prix:9<span> </span>€</p>
+					<hr>
+					<select id="Prod3">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(3)" id="BP">Valider</button> <br>
+				</div>
+			</div>			
+
+	</div>		
+
+	</div>
+	<hr>
+	<h1><u>Desserts:<br></u></h1>
+	<div class="category" id="Desserts"onclick="myFunction2()">
+			<div class="prod" id="Glaces">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1570099588423-bdaf355b8c59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Glaces</h2></span>
+					<p>Description:<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					<p>Prix:4<span> </span>€</p>
+					<hr>
+					<select id="Prod8">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(8)" id="BP">Valider</button> <br>
+				</div>
+			</div>	
+			<div class="prod" id="Ti">
+					<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Tiramisu</h2></span>
+					<span><p>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span>
+					<p>Prix:5<span> </span>€</p>
+					<hr>
+					<select id="Prod9">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(9)" id="BP">Valider</button> <br>
+				</div>	
+	</div>	
+	</div>
+	<hr>	
+	<h1><u>Boissons:<br></u></h1>
+	<div class="category" id="Boissons"onclick="myFunction2()">
+			<div class="prod" id="Cafe">
+				<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Café</h2></span>
+					<p>Description:<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					<p>Prix:1,50<span> </span>€</p>
+					<hr>
+					<select id="Prod10">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(10)" id="BP">Valider</button> <br>
+				</div>
+			</div>	
+			<div class="prod" id="Vin">
+					<div class="imgprod"><span><img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></span></div>
+				<div class="infoprod">
+					<span><h2>Vin</h2></span>
+					<span><p>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span>
+					<p>Prix:3<span> </span>€</p>
+					<hr>
+					<select id="Prod11">
+				        <option value="1">1</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+					  	<option value="9">9</option>
+ 					</select>
+      				<button onclick="add_element(11)" id="BP">Valider</button> <br>
+				</div>	
+	</div>	
+</div>
+
+<hr>
+
+<div class="Total" id="total"onclick="myFunction2()">
+	<h1><u>Votre Addition:<br></u></h1>
+	<div>
+		<h2>Voici le récapitulatif de votre commande:</h2>
+	</div>
+
+	<div class="TABEL">
+		<table id="tableau">
+		  <tr>
+		    <th><u>Produit<u></th>
+		    <th><u>Options<u></th>
+		    <th><u>Qantité<u></th>
+		    <th><u>Prix<u></th>
+		  </tr>
+
+		</table>
+	</div>
+
+	<input type="text" id="remarques" placeholder="Remarques/demandes..." >
+	<div class=ad>
+		<h2>Votre Total est de <span id="Tot">0</span> €</h2>
+		<button onclick="gen_qr()">Valider la commande✔</button>
+
+	</div>
+</div>
+<hr>
+<div class="qrdiv" id="qrdiv">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <h1>Veuillez montrer ce Qr code au serveur:</h1>
+  <img id="img_qr" src="">
+</div>
+<hr>
+</body>
+<div class="foot"> <div class="alert" id="alert">
+ 
+  <span id="txt_al">text</span>
+</div></div>
+<footer id="about"onclick="myFunction2()">
+			<h1><u>Scan N' Order</u>
+			</h1>
+			<br>
+
+			<hr>
+
+
+			<div class="row" id="join">
+				<div class="column">
+					<h2>Sitemap:</h2>
+				 <a href="#home" class="active" >Scan N' Order</a>
+	  <a href="#Menus">Menus</a>
+	  <a href="#Plats">Plats</a>
+	  <a href="#Entrées">Entrées</a>
+	  <a href="#Desserts">Desserts</a>
+	  <a href="#Boissons">Boissons</a>
+	  <a href="#total">Total</a>
+	  <a href="#about">A propos</a>
+					<br>
+					<a href="https://main-scannorder-beta.netlify.app/">Notre site web</a><br>
+					<br>
+				
+				</div>
+
+
+				<div class="column">
+					<h2>Contacts:</h2>
+
+
+					<p>Mail:<br>
+					scis.contact.pro@gmail.com</p>
+
+
+					<p>Télephone:<br>
+					+33 6 05 81 73 18 (10h-17h, service client)</p>
+
+
+					<p>+33 7 83 35 20 85 (10h-17h, support technique)<br>
+					<br>
+					<a href="https://www.instagram.com/scis.scan_order/">Instagram</a> <a href="https://twitter.com/OrderScan">Twitter</a></p>
+				</div>
+
+
+				<div class="child">
+					<hr>
+
+
+					<h2>Legal:</h2>
+
+
+					<p>Scan N' Order est une initiative développée par Robert Antaluca et Fadi Shafo pour SCIS.</p>
+					<p>Vous visitez actuellement la version beta de notre service.</p>
+					<p>2020</p>
+
+
+			<p>V:1.0</p>
+				</div>
+			</div>
+
+
+			
+		</footer>
+</html>
